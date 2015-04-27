@@ -48,10 +48,10 @@ module.exports = class Slices
       slice.type = @file.readInt()
         
       slice.bounds =
-        top: @file.readInt()
         left: @file.readInt()
-        bottom: @file.readInt()
+        top: @file.readInt()
         right: @file.readInt()
+        bottom: @file.readInt()
         
       slice.url = @file.readUnicodeString()
       slice.target = @file.readUnicodeString()
